@@ -2,7 +2,7 @@
 Descreve a especificação da API relativa à partilha de estatísticas sobre os utilizadores e reações sobre os serviços da plataforma digital única em conformidade com o Regulamento (UE) 2018/1724 do Parlamento Europeu.
 do Conselho.
 
-Existem quatro APIS no âmbito deste projecto para tranferir dados  da ferramenta comum ou das ferramentas comuns dos estados membros para processamento, análise e visualização.
+Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta comum ou das ferramentas comuns dos estados membros para processamento, análise e visualização.
 
 
 # Estatísticas
@@ -53,3 +53,14 @@ Serviços de Assistência
 - Questionário adicional
 - Frequência uma vez por mês
 
+# 	API para o identificador único
+Esta API tem o objetivo de gerar um ID único para ser usado para chamar as outras APIS no envio de informação estatística ou de retorno de informação para um intervalo de referência.
+Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número único primeiro.
+
+
+ O ID único recebido na resposta vai ser utilizdo para chamar as outras API's e quando forem invocadas as restantes APIS devemos ter conta os seguintes pontos:
+ - Um intervalo de referência corresponde a um ID único
+ - A entidade competente deve manter um mapeamento entre o ID único e o intervalo de referência que foi utilizado
+ - Se alguma das APIS for invocada para reenviar os dados de um intervalo de referência  devemos usar um ID único e não voltar a chamar a API de identificador único.
+ - Se a entidade necessitar de alterar informamção já enviada para um intervalo de referência, deve usar o mesmo  Unique ID should be used again.
+ - A informação que for reenviada com o mesmo ID único vai ser sobreposta.
