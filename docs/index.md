@@ -64,3 +64,9 @@ Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número
  - Se alguma das APIS for invocada para reenviar os dados de um intervalo de referência  devemos usar um ID único e não voltar a chamar a API de identificador único.
  - Se a entidade necessitar de alterar informamção já enviada para um intervalo de referência, deve usar o mesmo  Unique ID should be used again.
  - A informação que for reenviada com o mesmo ID único vai ser sobreposta.
+ 
+ Exemplo de resposta:
+```markdown
+ {"unique-id": "838a89cd-f096-4847-be3f-a053ef9749bf"}
+```
+
