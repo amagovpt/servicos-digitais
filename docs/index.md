@@ -14,16 +14,6 @@ Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta
 - Dados de contexto
 - Frequência uma vez por mês
 
-Serviços de Assistência
-- Número de pedidos
-- Assunto
-- Categorias 
-     - Cidadãos ou Negócio
-	 - Transfronteiriço ou nacional
-- Tempo médio de resposta num período de 6 meses
-- Dados de contexto
-- Frequência uma vez por mês
-
  Exemplo de payload:
 ```markdown
  
@@ -92,15 +82,154 @@ Serviços de Assistência
 
 ```
 
+# Retorno de Informação de primeiro de nível e de segundo nível
+```markdown
+{
+  "isSDG": true,
+  "content": [
+    {
+      "uniqueId": "123456789",
+      "referencePeriod": {
+        "startDate": "2020-01-01 00:00:00",
+        "endDate": "2020-01-31 00:00:00"
+      },
+      "transferDate": "2020-02-01 00:00:00",
+      "transferType": "API",
+      "nbEntries": 2,
+      "feedbacks": [
+        {
+          "feedback": {
+            "category": "Procedure",
+            "rating": 1,
+            "source": "www.konsumenteuropa.se",
+            "foundInformation": "Yes",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        },
+        {
+          "feedback": {
+            "category": "Information",
+            "rating": 2,
+            "source": "http://www.amsfl.li/ ",
+            "foundInformation": "Partly",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        }
+      ]
+    },
+    {
+      "uniqueId": "98765421",
+      "referencePeriod": {
+        "startDate": "2020-02-01 00:00:00",
+        "endDate": "2020-02-29 00:00:00"
+      },
+      "transferDate": "2020-03-01 00:00:00",
+      "transferType": "API",
+      "nbEntries": 2,
+      "feedbacks": [
+        {
+          "feedback": {
+            "category": "Assistance",
+            "rating": 5,
+            "source": "http://www.moi.gov.cy/moi/moi.nsf/All/6D6489AF90B208F4C2257B89002E03F3",
+            "foundInformation": "Partly",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        },
+        {
+          "feedback": {
+            "category": "Procedure",
+            "rating": 1,
+            "source": "https://www.odrcontactpoint.uk/",
+            "foundInformation": "Yes",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        }
+      ]
+    }
+  ]
+}
 
-# Retorno de informação e qualidade
-
-## Serviços Online
-- Avaliação do serviço (1 a 5 estrelas) – campo obrigatório *
-- Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
+```
+## Serviços de Assistência
+- Número de pedidos
+- Assunto
+- Categorias 
+     - Cidadãos ou Negócio
+	 - Transfronteiriço ou nacional
+- Tempo médio de resposta num período de 6 meses
 - Dados de contexto
-- Questionário adicional
 - Frequência uma vez por mês
+
+Exemplo de payload:
+```markdown
+{
+  "isSDG": true,
+  "content": [
+    {
+      "uniqueId": "123456789",
+      "referencePeriod": {
+        "startDate": "2020-01-01 00:00:00",
+        "endDate": "2020-01-31 00:00:00"
+      },
+      "transferDate": "2020-02-01 00:00:00",
+      "transferType": "API",
+      "nbEntries": 2,
+      "feedbacks": [
+        {
+          "feedback": {
+            "category": "Procedure",
+            "rating": 1,
+            "source": "www.konsumenteuropa.se",
+            "foundInformation": "Yes",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        },
+        {
+          "feedback": {
+            "category": "Information",
+            "rating": 2,
+            "source": "http://www.amsfl.li/ ",
+            "foundInformation": "Partly",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        }
+      ]
+    },
+    {
+      "uniqueId": "98765421",
+      "referencePeriod": {
+        "startDate": "2020-02-01 00:00:00",
+        "endDate": "2020-02-29 00:00:00"
+      },
+      "transferDate": "2020-03-01 00:00:00",
+      "transferType": "API",
+      "nbEntries": 2,
+      "feedbacks": [
+        {
+          "feedback": {
+            "category": "Assistance",
+            "rating": 5,
+            "source": "http://www.moi.gov.cy/moi/moi.nsf/All/6D6489AF90B208F4C2257B89002E03F3",
+            "foundInformation": "Partly",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        },
+        {
+          "feedback": {
+            "category": "Procedure",
+            "rating": 1,
+            "source": "https://www.odrcontactpoint.uk/",
+            "foundInformation": "Yes",
+            "helpUsImprove": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        }
+      ]
+    }
+  ]
+}
+
+```
 
 ## Serviços Informativos
 
@@ -112,7 +241,8 @@ Serviços de Assistência
 - Frequência uma vez por mês
 
 
-Serviços de Assistência
+
+## Serviços de Assistência
 
 - Avaliação do serviço fornecido (1 a 5 estrelas) – campo obrigatório *
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
