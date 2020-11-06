@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+## API dos serviços da plataforma digital única
+Descreve a especificação da API relativa à partilha de estatísticas sobre os utilizadores e reações sobre os serviços da plataforma digital única em conformidade com o Regulamento (UE) 2018/1724 do Parlamento Europeu.
+do Conselho.
 
-You can use the [editor on GitHub](https://github.com/amagovpt/servicos-digitais/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Existem quatro APIS no âmbito deste projecto para tranferir dados  da ferramenta comum ou das ferramentas comuns dos estados membros para processamento, análise e visualização.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+One additional API is also foreseen to provide the message ID to be used when calling any of the main four APIs above.  
+In the table below is included a summary of the payloads to be transferred via the APIs and frequency of transmission. 
+The API data definition files, so called “swaggers”, are created in a way to contain this information as outlined below.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+# Estatísticas
 
-# Header 1
-## Header 2
-### Header 3
+Serviços Informativos
+- Número de visitas
+- Países dos utilizadores que visitam as páginas web
+- Dispositivos utilizados para visitar as páginas web
+- Dados de contexto
+- Frequência uma vez por mês
 
-- Bulleted
-- List
+Serviços de Assistência
+- Número de pedidos
+- Assunto
+- Categorias 
+     - Cidadãos ou Negócio
+	 - Transfronteiriço ou nacional
+- Tempo médio de resposta num período de 6 meses
+- Dados de contexto
+- Frequência uma vez por mês
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+# Retorno de informação e qualidade
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Serviços Online
+- Avaliação do serviço (1 a 5 estrelas) – campo obrigatório *
+- Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
+- Dados de contexto
+- Questionário adicional
+- Frequência uma vez por mês
 
-### Jekyll Themes
+Serviços Informativos
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amagovpt/servicos-digitais/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Encontrou o que procurava? (opções exclusivas: SIM/NÃO/PARCIALMENTE) 
+- Avaliar esta página (Pontuação através de estrelas: de 1 a 5)
+- Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
+- Dados de contexto
+- Questionário adicional
+- Frequência uma vez por mês
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Serviços de Assistência
+
+- Avaliação do serviço fornecido (1 a 5 estrelas) – campo obrigatório *
+- Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
+- Dados de contexto
+- Questionário adicional
+- Frequência uma vez por mês
+
