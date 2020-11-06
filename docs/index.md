@@ -5,14 +5,9 @@ do Conselho.
 Existem quatro APIS no âmbito deste projecto para tranferir dados  da ferramenta comum ou das ferramentas comuns dos estados membros para processamento, análise e visualização.
 
 
-One additional API is also foreseen to provide the message ID to be used when calling any of the main four APIs above.  
-In the table below is included a summary of the payloads to be transferred via the APIs and frequency of transmission. 
-The API data definition files, so called “swaggers”, are created in a way to contain this information as outlined below.
-
-
 # Estatísticas
 
-Serviços Informativos
+## Serviços Informativos
 - Número de visitas
 - Países dos utilizadores que visitam as páginas web
 - Dispositivos utilizados para visitar as páginas web
@@ -33,14 +28,14 @@ Serviços de Assistência
 
 # Retorno de informação e qualidade
 
-Serviços Online
+## Serviços Online
 - Avaliação do serviço (1 a 5 estrelas) – campo obrigatório *
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
 - Dados de contexto
 - Questionário adicional
 - Frequência uma vez por mês
 
-Serviços Informativos
+## Serviços Informativos
 
 - Encontrou o que procurava? (opções exclusivas: SIM/NÃO/PARCIALMENTE) 
 - Avaliar esta página (Pontuação através de estrelas: de 1 a 5)
