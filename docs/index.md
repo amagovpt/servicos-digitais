@@ -4,7 +4,6 @@ do Conselho.
 
 Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta comum ou das ferramentas comuns dos estados membros para processamento, análise e visualização.
 
-
 # Estatísticas
 
 ## Serviços Informativos
