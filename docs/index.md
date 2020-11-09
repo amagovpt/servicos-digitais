@@ -774,16 +774,18 @@ Exemplo de payload:
 Esta Web API deve ser usada para recolher dados do feedback de 2º nível do utilizador sobre os serviços informativos, assistência, de resolução de problemas e de procedimentos online.
 O pedido e a resposta estão explicados na tabela abaixo.
 
+
+As perguntas disponíveis para o questionáriod de segundo nível para os diferentes tipos de serviço vão ser descritas nas tabelas abaixo:
+
+### 3.2.1.  Serviços Informativos
+
+
 - Encontrou o que procurava? (opções exclusivas: SIM/NÃO/PARCIALMENTE) 
 - Avaliar esta página (Pontuação através de estrelas: de 1 a 5)
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
 - Dados de contexto
 - Questionário adicional
 - Frequência uma vez por mês
-
-As perguntas disponíveis para o questionáriod de segundo nível para os diferentes tipos de serviço vão ser descritas nas tabelas abaixo:
-
-### 3.2.1.  Serviços Informativos
 
 Exemplo de payload:
 
