@@ -286,7 +286,49 @@ Enumerado:
     <td>Sim</td>
     <td>A informação enviada está a ser enviada no âmbito do SDG?</td>
   </tr>
-
+  <tr>
+    <td>assistanceServiceStats</td>
+    <td>Object</td>
+    <td>Sim</td>
+    <td>Representação dos serviços de assistência</td>
+  </tr>
+   <tr>
+    <td>uniqueId</td>
+    <td>string</td>
+    <td>Sim</td>
+    <td>O identificador único para o envio das estatísticas dos  serviços informativos para um intervalo de referência específico que é obtido através da api de Identificador Único</td>
+  </tr>
+  <tr>
+    <td>referencePeriod</td>
+    <td>object</td>
+    <td>Sim</td>
+    <td>Intervalo de referência</td>
+  </tr>
+ <tr>
+    <td>startDate</td>
+    <td>string</td>
+    <td>Sim</td>
+    <td>Data de ínicio do intervalo de referência</td>
+  </tr>
+  <tr>
+    <td>endDate</td>
+    <td>string</td>
+    <td>Sim</td>
+    <td>Data de fim do intervalo de referência</td>
+  </tr>
+ <tr>
+    <td>transferDate</td>
+    <td>string</td>
+    <td>Sim</td>
+    <td>Data e hora em que estamos a invocar a API</td>
+  </tr>
+  <tr>
+    <td>transferType</td>
+    <td>String (enum)</td>
+    <td>Sim</td>
+    <td>Tipo de transferência de dados, neste caso será 'API'</td>
+  </tr>
+ 
 </table>
  
 ```markdown
