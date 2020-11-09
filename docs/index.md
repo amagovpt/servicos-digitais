@@ -329,6 +329,60 @@ Enumerado:
     <td>Tipo de transferência de dados, neste caso será 'API'</td>
   </tr>
  
+  <tr>
+    <td>nbEntries</td>
+    <td>integer</td>
+    <td>Sim</td>
+    <td>Número de entradas , incluindo todas as fontes de URL's para as estatísticas que estão a ser enviadas</td>
+  </tr>
+ <tr>
+    <td>sources</td>
+    <td>Array of Objects</td>
+    <td>Sim</td>
+    <td>Representação da informação estatística sobre uma URL . Um objeto pode referenciar vários URLs</td>
+  </tr>
+  <tr>
+    <td>source</td>
+    <td>object</td>
+    <td>Sim</td>
+    <td>Dados estatísticos</td>
+  </tr>
+  <tr>
+    <td>sourceUrl</td>
+    <td>string</td>
+    <td>Sim</td>
+    <td>URL através do qual os dados estão a ser obtidos.</td>
+  </tr> 
+  <tr>
+    <td>statistics</td>
+    <td>Objects</td>
+    <td>Sim</td>
+    <td>Representação dos dados estatísticos para um URL
+	An object representing the statistical information for one particular source URL</td>
+  </tr>
+
+  <tr>
+    <td>urlStatistics</td>
+    <td>Array of Objects</td>
+    <td>Sim</td>
+    <td>
+	Representação de estatísticas de pedidos de assistência ou de solução de problemas</td>
+  </tr>
+  <tr>
+    <td>nbRequests</td>
+    <td>integer</td>
+    <td>Sim</td>
+    <td>Número total de pedidos  de assistência e pedido de solução de problemas</td>
+  </tr>
+  <tr>
+    <td>categoryOfUser</td>
+    <td>String (enum)</td>
+    <td>Sim</td>
+    <td>Categorias de utilizador "Cidadão" ou "Negócio"</td>
+  </tr>
+  
+ 
+ 
 </table>
  
 ```markdown
