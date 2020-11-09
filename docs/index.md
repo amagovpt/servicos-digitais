@@ -16,154 +16,157 @@ Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta
 
 <table>
   <tr>
-    <td>Request</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="4">Pedido</td>  
   </tr>
   <tr>
-    <td>Parameter</td>
-    <td>Type</td>
-    <td>Required (Yes / No)</td>
-    <td>Notes</td>
+    <td>Parâmetros</td>
+    <td>Tipo</td>
+    <td>Obrigatório (Sim/ Não)</td>
+    <td>Comentários</td>
   </tr>
   <tr>
     <td>isSDG</td>
     <td>boolean</td>
-    <td>Yes</td>
-    <td>Is this information associated with the group of services related to SDG?</td>
+    <td>Sim</td>
+    <td>A informação enviada está a ser enviada no âmbito do SDG?</td>
   </tr>
   <tr>
     <td>informationServiceStats</td>
     <td>Object</td>
-    <td>Yes</td>
-    <td>An object representing statistics on information services.</td>
+    <td>Sim</td>
+    <td>O objeto que representa os serviços informativos</td>
   </tr>
   <tr>
     <td>uniqueId</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>Unique ID for information services statistics submission for a specific reference period received from the UniqueID web API call.</td>
+    <td>Sim</td>
+    <td> O identificador único para o envio das estatísticas dos  serviços informativos para um intervalo de referência específico que é obtido através da api de Identificador Único</td>
   </tr>
   <tr>
     <td>referencePeriod</td>
     <td>Object</td>
-    <td>Yes</td>
-    <td>Container of the Start Date and End Date of the reference period.</td>
+    <td>Sim</td>
+    <td>Representação do intervalo de referência com a data de ínicio e de fim.</td>
   </tr>
   <tr>
     <td>startDate</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>Start Date of the reference period.</td>
+    <td>Sim</td>
+    <td>Data de ínicio do intervalo de referência</td>
   </tr>
   <tr>
     <td>endDate</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>End Date of the reference period.</td>
+    <td>Sim</td>
+    <td>Data de fim do intervalo de referência</td>
   </tr>
   <tr>
     <td>transferDate</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>Date Time when the web API is called</td>
+    <td>Sim</td>
+    <td>Data e hora em que estamos a invocar a API</td>
   </tr>
   <tr>
     <td>transferType</td>
     <td>String (enum)</td>
-    <td>Yes</td>
-    <td>Transfer type should be used as ‘API’ to call this web service.</td>
+    <td>Sim</td>
+    <td>Tipo de transferência de dados, neste caso será "API"</td>
   </tr>
   <tr>
     <td>nbEntries</td>
     <td>integer</td>
-    <td>yes</td>
-    <td>No of total entries including all source URL for which the statistics are sent.</td>
+    <td>Sim</td>
+    <td>Número de entradas , incluindo todas as fontes de URL's para as estatísticas que estão a ser enviadas</td>
   </tr>
   <tr>
     <td>sources</td>
     <td>Array of Objects</td>
-    <td>Yes</td>
-    <td>An object representing statistical information about one source URL. Array of objects because a given Reference Period is associated to several URLs.</td>
+    <td>Sim</td>
+    <td>Representação da informação estatística sobre uma URL . Um objeto pode referenciar vários URLs</td>
   </tr>
   <tr>
     <td>source</td>
     <td>object</td>
-    <td>Yes</td>
-    <td>Object holding the statistical data</td>
+    <td>Sim</td>
+    <td>Dados estatísticos</td>
   </tr>
   <tr>
     <td>sourceUrl</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>URL for which the statistics is collected.</td>
+    <td>Sim</td>
+    <td>URL através do qual os dados estão a ser obtidos.</td>
   </tr>
   <tr>
     <td>statistics</td>
     <td>Objects</td>
-    <td>Yes</td>
-    <td>An object representing the statistical information for one particular source URL.</td>
+    <td>Sim</td>
+    <td>Representação dos dados estatísticos para um URL
+	An object representing the statistical information for one particular source URL.</td>
   </tr>
   <tr>
     <td>nbVisits</td>
     <td>integer</td>
-    <td>Yes</td>
-    <td>Total number of visits to the URL</td>
+    <td>Sim</td>
+    <td>Número total de visitas ao URL</td>
   </tr>
   <tr>
     <td>originatingCountry</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>Country from where the visits are originated to the URL.</td>
+    <td>Sim</td>
+    <td>País de onde as visitas são originadas no acesso ao URL.</td>
   </tr>
   <tr>
     <td>country</td>
     <td>String enum</td>
-    <td>Yes</td>
-    <td>This field holds the country codes as per the ‘ISO 3166-1 alpha-2’.
-enum:
-    	- AT
-    	- BE
-    	- BG
-    	- CY
-        - CZ
-    	- DE
-    	- DK
-    	- EE
-    	- EL
-    	- ES
-    	- FI
-    	- FR
-    	- HR
-    	- HU
-    	- IE
-    	- IS
-    	- IT
-    	- LI
-    	- LT
-    	- LU
-    	- LV
-    	- MT
-    	- NL
-    	- NO
-    	- PL
-    	- PT
-    	- RO
-    	- SE
-    	- SI
-    	- SK
+    <td>Sim</td>
+    <td>Código ‘ISO 3166-1 alpha-2’ do País
+	
+Enumerado:
+
+<ul>
+  <li>AT</li>
+  <li>BE</li>
+  <li>BG</li>
+  <li>CY</li>
+  <li>CZ</li>
+  <li>DE</li>
+  <li>DK</li>
+  <li>EE</li>
+  <li>EL</li>
+  <li>ES</li>
+  <li>FI</li>
+  <li>FR</li>
+  <li>HR</li>
+  <li>HU</li>
+  <li>IE</li>
+  <li>IS</li>
+  <li>LT</li>
+  <li>LI</li>
+  <li>LU</li>
+  <li>LV</li>
+  <li>MT</li>
+  <li>NL</li>
+  <li>NO</li>
+  <li>PL</li>
+  <li>PT</li>
+  <li>RO</li>
+  <li>SE</li>
+  <li>SI</li>
+  <li>SK</li>
+</ul>
     	
  </td>
   </tr>
   <tr>
     <td>deviceType</td>
     <td>string</td>
-    <td>Yes</td>
-    <td>Type of Device used to visit the URL
--          Mobile
--          Tablet
--          PC
+    <td>Sim</td>
+    <td>Tipo de dispositivo utilizado para visitar o URL
+<ul>
+ <li>Mobile</li>
+  <li>Tablet</li>
+  <li>PC</li>
+</ul>
  </td>
   </tr>
   <tr>
@@ -173,14 +176,14 @@ enum:
     <td> </td>
   </tr>
   <tr>
-    <td>Response</td>
+    <td>Resposta</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Code</td>
-    <td>Message</td>
+    <td>Código</td>
+    <td>Mensagem</td>
     <td></td>
     <td></td>
   </tr>
