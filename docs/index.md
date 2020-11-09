@@ -265,24 +265,6 @@ Enumerado:
 - Dados de contexto
 - Frequência uma vez por mês
 
-<table>
-  <tr>
-    <th colspan="4">Pedido</th>   
-  </tr>
-  <tr>
-    <th>Parâmetros</th>
-    <th>Tipo</th>
-    <th>Obrigatório (Sim/ Não)</th>
-    <th>Comentários</th>
-  </tr>
-  <tr>
-    <td>isSDG</td>
-    <td>boolean</td>
-    <td>Sim</td>
-    <td>A informação enviada está a ser enviada no âmbito do SDG?</td>
-  </tr>
- 
-</table>
 
 
  Exemplo de payload:
