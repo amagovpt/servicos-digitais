@@ -446,11 +446,11 @@ Enumerado:
   </tr>
   <tr>
     <th colspan="2">Código</th>
-    <th colspan="2" >Mensagem</th>   
+    <th colspan="2">Mensagem</th>   
   </tr>
   <tr>
-    <td>200</td>
-    <td>OK</td>
+    <td colspan="2">200</td>
+    <td colspan="2">OK</td>
   </tr>
  
  
