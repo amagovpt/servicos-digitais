@@ -180,8 +180,8 @@ Enumerado:
    
   </tr>
   <tr>
-    <td>200</td>
-    <td>OK</td>
+    <td colspan="2">200</td>
+    <td colspan="2">OK</td>
    
   </tr>
 </table>
