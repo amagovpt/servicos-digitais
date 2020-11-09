@@ -623,7 +623,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
     <td>helpUsImprove</td>
     <td>string</td>
     <td>Não</td>
-    <td>Additional information received from the end-user in the open text box is mapped to this field. It applies only to the common feedback tool where the open free text field is available.</td>
+    <td>Informação em texto livre enviada pelo utilizador</td>
   </tr>
   <tr>
     <td>foundInformation</td>
@@ -680,7 +680,7 @@ Exemplo: "2020-02-01 00:00:00"</td>
     <td>feedbacks</td>
     <td>Array of Objects</td>
     <td>yes</td>
-    <td>An object representing the feedback for different source services. This object internally refers to the object ‘feedback’.</td>
+    <td>Representação de um conjunto de ‘feedbacks’.</td>
   </tr>
  
   <tr>
