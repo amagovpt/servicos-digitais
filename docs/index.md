@@ -19,10 +19,10 @@ Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta
     <td colspan="4">Pedido</td>  
   </tr>
   <tr>
-    <td>Parâmetros</td>
-    <td>Tipo</td>
-    <td>Obrigatório (Sim/ Não)</td>
-    <td>Comentários</td>
+    <th>Parâmetros</th>
+    <th>Tipo</th>
+    <th>Obrigatório (Sim/ Não)</th>
+    <th>Comentários</th>
   </tr>
   <tr>
     <td>isSDG</td>
