@@ -26,7 +26,15 @@ Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número
 
 # 2. Estatísticas
 
+
+
 ## 2.1. Serviços Informativos
+Esta API serve para transferir dados estatítisticos nos serviços informativos para um  período de tempo .
+A frequência de envio deve ser mensal. Não é possível enviar múltiplos intervalos de referência numa vez.
+Esta API não permite enviar mensagens com tamanho superior a 10 mb , no caso disso acontecer os intervalos de referência devem ser dividos para respeitar o limite.
+O pedido e a resposta estão explicados na tabela abaixo.
+
+
 - Número de visitas
 - Países dos utilizadores que visitam as páginas web
 - Dispositivos utilizados para visitar as páginas web
@@ -276,6 +284,12 @@ Enumerado:
 ```
 
 ## 2.2. Serviços de Assistência
+Esta API serve para transferir dados estatítisticos de assistência e resolução de problemas para um  intervalo de tempo .
+A frequência de envio deve ser mensal. Não é possível enviar múltiplos intervalos de referência numa vez.
+Esta API não permite enviar mensagens com tamanho superior a 10 mb , no caso disso acontecer os intervalos de referência devem ser dividos para respeitar o limite.
+O pedido e a resposta estão explicados na tabela abaixo.
+
+
 - Número de pedidos
 - Assunto
 - Categorias 
@@ -555,6 +569,9 @@ Enumerado:
 
 
 ## 3.1. Retorno de Informação de 1º nível
+Esta Web API deve ser usada para recolher dados do feedback de 1º nível do utilizador sobre os serviços informativos, assistência, de resolução de problemas e de procedimentos online.
+O pedido e a resposta estão explicados na tabela abaixo.
+
 
 <table>
   <tr>
@@ -752,7 +769,10 @@ Exemplo de payload:
 
 ```
 
-## 3.2. Retorno de Informação de segundo nível - Serviços Informativos
+## 3.2. Retorno de Informação de segundo nível 
+
+Esta Web API deve ser usada para recolher dados do feedback de 2º nível do utilizador sobre os serviços informativos, assistência, de resolução de problemas e de procedimentos online.
+O pedido e a resposta estão explicados na tabela abaixo.
 
 - Encontrou o que procurava? (opções exclusivas: SIM/NÃO/PARCIALMENTE) 
 - Avaliar esta página (Pontuação através de estrelas: de 1 a 5)
@@ -761,6 +781,9 @@ Exemplo de payload:
 - Questionário adicional
 - Frequência uma vez por mês
 
+As perguntas disponíveis para o questionáriod de segundo nível para os diferentes tipos de serviço vão ser descritas nas tabelas abaixo:
+
+### 3.2.1.  Serviços Informativos
 
 Exemplo de payload:
 
@@ -786,8 +809,7 @@ Exemplo de payload:
           }
         }
 ```
-
-## 3.3. Retorno de Informação de segundo nível - Serviços de Assistência
+### 3.2.2. Serviços de Assistência
 
 - Avaliação do serviço fornecido (1 a 5 estrelas) – campo obrigatório *
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
@@ -813,8 +835,8 @@ Exemplo de payload:
           }
 }
 ```
-## 3.3. Retorno de Informação de segundo nível - Procedimentos
 
+### 3.2.3. Serviços de procedimento - online
 
 - Avalie este procedimento?  (Pontuação através de estrelas: de 1 a 5)
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
