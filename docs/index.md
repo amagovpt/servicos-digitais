@@ -24,7 +24,7 @@ Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número
 ```
 
 
-#2. Estatísticas
+# 2. Estatísticas
 
 ## 2.1. Serviços Informativos
 - Número de visitas
@@ -551,7 +551,7 @@ Enumerado:
 }
 ```
 
-# 3. Retorno de Informação de primeiro de nível e de segundo nível
+# 3. Retorno de Informação \ Feedback
 
 
 ## 3.1. Retorno de Informação de 1º nível
@@ -671,7 +671,7 @@ Exemplo: "2020-02-01 00:00:00"</td>
   </tr>
   <tr>
     <th colspan="2">Code</th>
-    <th cols>Message</th>
+    <th colspan="2">Message</th>
   
   </tr>
   <tr>
