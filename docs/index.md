@@ -380,8 +380,55 @@ Enumerado:
     <td>Sim</td>
     <td>Categorias de utilizador "Cidadão" ou "Negócio"</td>
   </tr>
+  <tr>
+    <td>subjectMatter</td>
+    <td>string</td>
+    <td>Sim</td>
+    <td>Categorias de serviços de assistência:
+		<ul>
+		  <li>Starting business</li>
+		   <li>Registering a company</li>
+		   <li>Needing a licence, permit or certificate to start or continue an activity</li>
+		   <li>Registering Intellectual Property</li>
+		   <li>Registering a branch</li>
+		   <li>Starting a new activity</li>
+		   <li>Financing a company</li>
+		   <li>Hiring an employee</li>
+		   <li>Starting cross-border business</li>
+		   <li>Registering a cross-border business</li>
+		   <li>Registering a branch</li>
+		   <li>Doing business</li>
+		   <li>Financing a company</li>
+		   <li>Needing a licence, permit or certificate to start or continue an activity</li>
+		   <li>Registering Intellectual Property</li>
+		   <li>Hiring an employee</li>
+		   <li>Participating in public procurement</li>
+		   <li>Notifying and reporting to authorities</li>
+		   <li>Starting a new activity</li>
+		   <li>Registering a branch</li>
+		   <li>Having problems in paying creditors</li>
+		   <li>Closing business</li>
+		   <li>Restructuring of a company</li>
+		   <li>Dissolution of a company</li>
+		   <li>Closing business</li>
+		   <li>Restructuring of a company</li>
+		   <li>Dissolution of a company</li>
+		   <li>Having a child</li>
+		   <li>Starting education</li>
+		   <li>Looking for a new job</li>
+		   <li>Losing/quitting a job</li>
+		   <li>Looking for a place to live</li>
+		   <li>Changing relationship status</li>
+		   <li>Driving a vehicle</li>
+		   <li>Travelling abroad</li>
+		   <li>Moving to/from the country</li>
+		   <li>Facing an emergency / health problem</li>
+		   <li>Facing a crime</li>
+		</ul> 
+       
+     
+  </tr>
   
- 
  
 </table>
  
