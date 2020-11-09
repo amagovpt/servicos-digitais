@@ -426,9 +426,33 @@ Enumerado:
 		   <li>Facing a crime</li>
 		</ul> 
        
-     
+    </td> 
   </tr>
-  
+  <tr>
+    <td>situationOfUser</td>
+    <td>string (enum)</td>
+    <td>Sim</td>
+    <td>Situação do utilizador Transfronteiriço "cross-border", Nacional "national"</td>
+  </tr>
+  <tr>
+    <td>avgResponseTime</td>
+    <td>integer</td>
+    <td>Sim</td>
+    <td>tempo médio de resposta em dias</td>
+  </tr>
+ 
+  <tr>
+    <th colspan="4">Response</th>
+  </tr>
+  <tr>
+    <th colspan="2">Código</th>
+    <th colspan="2" >Mensagem</th>   
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>OK</td>
+  </tr>
+ 
  
 </table>
  
