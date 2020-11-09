@@ -169,14 +169,10 @@ Enumerado:
 </ul>
  </td>
   </tr>
-  <tr >
-   
-  </tr>
+
   <tr>
-    <td>Resposta</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td colspan="4" >Resposta</td>
+ 
   </tr>
   <tr>
     <td>Código</td>
