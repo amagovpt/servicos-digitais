@@ -169,11 +169,8 @@ Enumerado:
 </ul>
  </td>
   </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
+  <tr >
+   
   </tr>
   <tr>
     <td>Resposta</td>
