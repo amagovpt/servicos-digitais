@@ -1,6 +1,6 @@
 ## API dos serviços da plataforma digital única
 Descreve a especificação da API relativa à partilha de estatísticas sobre os utilizadores e reações sobre os serviços da plataforma digital única em conformidade com o Regulamento (UE) 2018/1724 do Parlamento Europeu.
-do Conselho.
+.
 
 Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta comum ou das ferramentas comuns dos estados membros para processamento, análise e visualização.
 
@@ -587,8 +587,8 @@ O pedido e a resposta estão explicados na tabela abaixo.
     <td>isSDG</td>
     <td>boolean</td>
     <td>Sim</td>
-    <td>Is this information associated with the group of services related to SDG?</td>
-  </tr>
+    <td>
+ </tr>
  <tr>
     <td>uniqueId</td>
     <td>string</td>
