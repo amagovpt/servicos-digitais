@@ -71,5 +71,5 @@ definitions:
         type: "string"
         example: ""
 externalDocs:
-  description: "Encontre mais sobre o serviços da AMA em"
+  description: "Encontre mais sobre o serviços em"
   url: 'https://amagovpt.github.io/servicos-digitais/'

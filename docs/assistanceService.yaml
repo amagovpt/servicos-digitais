@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  description: 'Este é um serviço disponibilizado pela AMA que fornece interoperabilidade com o Single Digital Gateway (SDG) da Comissão Europeia. Esta API serve para transferir estatísticas recolhidas sobre serviços de assistência e de resolução de problemas.'
+  description: 'Esta API serve para transferir dados estatítisticos de assistência e resolução de problemas para um  intervalo de tempo .'
   version: 1.0.0
   title: "SDG - assistanceService"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
@@ -155,5 +155,5 @@ definitions:
         type: "string"
         example: ""
 externalDocs:
-  description: "Encontre mais sobre o serviços da AMA em"
-  url: 'http://www.ama.gov.pt'
+  description: "Encontre mais sobre o serviços em"
+  url: 'https://amagovpt.github.io/servicos-digitais/'

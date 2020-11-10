@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  description: 'Este é um serviço disponibilizado pela AMA que fornece interoperabilidade com o Single Digital Gateway (SDG) da Comissão Europeia. Esta API serve para enviar um único feedback de primeiro nível.'
+  description: 'Esta Web API deve ser usada para recolher dados do feedback de 1º nível do utilizador sobre os serviços informativos, assistência, de resolução de problemas e de procedimentos online.'
   version: 1.0.0
   title: "SDG - provideQualityFeedback1stLevel"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
@@ -116,5 +116,5 @@ definitions:
         type: "string"
         example: ""
 externalDocs:
-  description: "Encontre mais sobre o serviços da AMA em"
-  url: 'http://www.ama.gov.pt'
+  description: "Encontre mais sobre o serviços em"
+  url: 'https://amagovpt.github.io/servicos-digitais/'
