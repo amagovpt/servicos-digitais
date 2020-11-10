@@ -23,11 +23,9 @@ Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número
 ```
 [Consultar o swagger](uniqueId.html)
 
-# 2. Estatísticas
 
 
-
-## 2.1. Serviços Informativos
+# 2. Estatísticas de serviços informativos
 Esta API serve para transferir dados estatítisticos nos serviços informativos para um  período de tempo .
 A frequência de envio deve ser mensal. Não é possível enviar múltiplos intervalos de referência numa vez.
 Esta API não permite enviar mensagens com tamanho superior a 10 mb , no caso disso acontecer os intervalos de referência devem ser dividos para respeitar o limite.
@@ -284,7 +282,7 @@ Enumerado:
 [Consultar o swagger](informationService.html)
 
 
-## 2.2. Serviços de Assistência
+# 3. Estatísticas de  serviços de assistência
 Esta API serve para transferir dados estatítisticos de assistência e resolução de problemas para um  intervalo de tempo .
 A frequência de envio deve ser mensal. Não é possível enviar múltiplos intervalos de referência numa vez.
 Esta API não permite enviar mensagens com tamanho superior a 10 mb , no caso disso acontecer os intervalos de referência devem ser dividos para respeitar o limite.
@@ -567,10 +565,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
 ```
 [Consultar o swagger](assistanceService.html)
 
-# 3. Retorno de Informação \ Feedback
-
-
-## 3.1. Retorno de Informação de 1º nível
+# 4. Retorno de Informação \ Feedback de 1º nível
 Esta Web API deve ser usada para recolher dados do feedback de 1º nível do utilizador sobre os serviços informativos, assistência, de resolução de problemas e de procedimentos online.
 O pedido e a resposta estão explicados na tabela abaixo.
 
@@ -772,7 +767,10 @@ Exemplo de payload:
 ```
 [Consultar o swagger](feedback1stLevel.html)
 
-## 3.2. Retorno de Informação de segundo nível 
+
+# 5. Retorno de Informação \ Feedback de 2º nível
+
+
 
 Esta Web API deve ser usada para recolher dados do feedback de 2º nível do utilizador sobre os serviços informativos, assistência, de resolução de problemas e de procedimentos online.
 O pedido e a resposta estão explicados na tabela abaixo.
@@ -780,7 +778,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
 
 As perguntas disponíveis para o questionáriod de segundo nível para os diferentes tipos de serviço vão ser descritas nas tabelas abaixo:
 
-### 3.2.1.  Serviços Informativos
+## 5.1. Retorno de Informação \ Feedback de 2º nível sobre serviços Informativos
 
 
 - Encontrou o que procurava? (opções exclusivas: SIM/NÃO/PARCIALMENTE) 
@@ -816,7 +814,7 @@ Exemplo de payload:
 ```
 
 [Consultar o swagger](feedback2ndLevel.html)
-### 3.2.2. Serviços de Assistência
+## 5.2. Retorno de Informação \ Feedback de 2º nível sobre serviços de assistência
 
 - Avaliação do serviço fornecido (1 a 5 estrelas) – campo obrigatório *
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
@@ -843,7 +841,8 @@ Exemplo de payload:
 }
 ```
 [Consultar o swagger](feedback2ndLevel.html)
-### 3.2.3. Serviços de procedimento - online
+
+## 5.3. Retorno de Informação \ Feedback de 2º nível sobre procedimentos\serviços on-line
 
 - Avalie este procedimento?  (Pontuação através de estrelas: de 1 a 5)
 - Ajude-nos a melhorar (caixa de texto aberta) – campo opcional*
