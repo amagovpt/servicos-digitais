@@ -417,8 +417,8 @@ O pedido e a resposta estão explicados na tabela abaixo.
     <td>subjectMatter</td>
     <td>string</td>
     <td>Sim</td>
-    <td>Categorias de serviços de assistência:
-		<ul>
+    <td>Categorias de serviços de assistência, a ser disposinibilizadas oportunamente.
+		<!--<ul>
 		  <li>Starting business</li>
 		   <li>Registering a company</li>
 		   <li>Needing a licence, permit or certificate to start or continue an activity</li>
@@ -457,7 +457,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
 		   <li>Moving to/from the country</li>
 		   <li>Facing an emergency / health problem</li>
 		   <li>Facing a crime</li>
-		</ul> 
+		</ul> -->
        
     </td> 
   </tr>
