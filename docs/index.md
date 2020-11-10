@@ -587,7 +587,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
     <td>isSDG</td>
     <td>boolean</td>
     <td>Sim</td>
-    </td>
+  
  </tr>
  <tr>
     <td>uniqueId</td>
