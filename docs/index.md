@@ -5,7 +5,7 @@ Existem cinco APIS no âmbito deste projecto para tranferir dados  da ferramenta
 
 
 
-# 1.API para o identificador único
+# 1. API para o identificador único
 Esta API tem o objetivo de gerar um ID único para ser usado para chamar as outras APIS no envio de informação estatística ou de retorno de informação para um intervalo de referência.
 Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número único primeiro.
 
