@@ -16,7 +16,7 @@ paths:
     get:
       tags:
       - "obter id"
-      summary: "Obter um unique id para uso nas apis da SDG."
+      summary: "Obter um  identificado único id para uso nas apis da SDG."
       description: "Esta operação tem como objetivo disponibilzar um id único que poderá ser utilizado ao invocar outras apis da SDG."
       produces:
       - "application/json"
