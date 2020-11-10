@@ -5,13 +5,13 @@ info:
   title: "SDG - informationService"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
   contact:
-    email: "apiteam@ama.pt"
-host: "esb.ama.lan"
+    email: "sdgportugal@ama.pt"
+host: "servicos.gov.pt"
 
 
 schemes:
   - "https"
-  - "http"
+
 paths:
   /informationService:
     post:

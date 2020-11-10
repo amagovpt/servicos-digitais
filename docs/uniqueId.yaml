@@ -5,12 +5,12 @@ info:
   title: "SDG - uniqueId"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
   contact:
-    email: "apiteam@ama.pt"
+    email: "sdgportugal@ama.pt"
 host: "servicos.gov.pt"
 
 
 schemes:
-  - "http"
+  - "https"
 paths:
   /uniqueId:
     get:
@@ -72,4 +72,4 @@ definitions:
         example: ""
 externalDocs:
   description: "Encontre mais sobre o serviços da AMA em"
-  url: 'http://www.ama.gov.pt'
+  url: 'https://amagovpt.github.io/servicos-digitais/'

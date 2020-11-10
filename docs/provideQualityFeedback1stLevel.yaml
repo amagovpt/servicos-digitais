@@ -5,13 +5,12 @@ info:
   title: "SDG - provideQualityFeedback1stLevel"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
   contact:
-    email: "apiteam@ama.pt"
+    email: "sdgportugal@ama.pt"
 host: "esb.ama.lan"
 
 
 schemes:
   - "https"
-  - "http"
 paths:
   /provideQualityFeedback1stLevel:
     post:
