@@ -417,7 +417,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
     <td>subjectMatter</td>
     <td>string</td>
     <td>Sim</td>
-    <td>Categorias de serviços de assistência, a ser disposinibilizadas oportunamente.
+    <td>Categorias de serviços de assistência, a ser disponibilizadas oportunamente.
 		<!--<ul>
 		  <li>Starting business</li>
 		   <li>Registering a company</li>
