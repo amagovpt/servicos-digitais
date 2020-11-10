@@ -22,7 +22,7 @@ Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número
 ```markdown
  {"unique-id": "838a89cd-f096-4847-be3f-a053ef9749bf"}
 ```
-
+[Consultar o swagger](uniqueId.html)
 
 # 2. Estatísticas
 
@@ -282,6 +282,8 @@ Enumerado:
 }
 
 ```
+[Consultar o swagger](informationService.html)
+
 
 ## 2.2. Serviços de Assistência
 Esta API serve para transferir dados estatítisticos de assistência e resolução de problemas para um  intervalo de tempo .
@@ -564,6 +566,7 @@ O pedido e a resposta estão explicados na tabela abaixo.
   ]
 }
 ```
+[Consultar o swagger](assistanceService.html)
 
 # 3. Retorno de Informação \ Feedback
 
@@ -812,6 +815,8 @@ Exemplo de payload:
           }
         }
 ```
+
+[Consultar o swagger](feedback2ndLevel.html)
 ### 3.2.2. Serviços de Assistência
 
 - Avaliação do serviço fornecido (1 a 5 estrelas) – campo obrigatório *
@@ -838,7 +843,7 @@ Exemplo de payload:
           }
 }
 ```
-
+[Consultar o swagger](feedback2ndLevel.html)
 ### 3.2.3. Serviços de procedimento - online
 
 - Avalie este procedimento?  (Pontuação através de estrelas: de 1 a 5)
@@ -864,3 +869,4 @@ Exemplo de payload:
           }
 }
 ```
+[Consultar o swagger](feedback2ndLevel.html)
