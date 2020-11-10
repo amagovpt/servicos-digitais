@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  description: 'Este é um serviço disponibilizado pela AMA que fornece interoperabilidade com o Single Digital Gateway (SDG) da Comissão Europeia. Esta API serve para transferir estatísticas recolhidas sobre serviços de informação.'
+  description: 'Esta API serve para transferir dados estatítisticos nos serviços informativos para um  período de tempo .'
   version: 1.0.0
   title: "SDG - informationService"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
