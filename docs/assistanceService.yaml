@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
-  description: 'Este é um serviço disponibilizado pela AMA que fornece interoperabilidade com o Single Digital Gateway (SDG) da Comissão Europeia. Esta API serve para transferir dados recolhidos no feedback de primeiro nível sobre serviços de informação, de assistência, de resolução de problemas ou procedimentos online.'
+  description: 'Este é um serviço disponibilizado pela AMA que fornece interoperabilidade com o Single Digital Gateway (SDG) da Comissão Europeia. Esta API serve para transferir estatísticas recolhidas sobre serviços de assistência e de resolução de problemas.'
   version: 1.0.0
-  title: "SDG - feedback1stLevel"
+  title: "SDG - assistanceService"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'
   contact:
     email: "apiteam@ama.pt"
@@ -11,13 +11,14 @@ host: "servicos.gov.pt"
 
 schemes:
   - "https"
+
 paths:
-  /feedback1stLevel:
+  /assistanceService:
     post:
       tags:
-      - "Enviar feedback 1º Nível"
-      summary: "Enviar feedbacks de primeiro nível sobre serviços de informação, de assistência, de resolução de problemas ou procedimentos online."
-      description: "Esta operação deve ser usada para enviar feedbacks de primeiro nível sobre serviços de informação, de assistência, de resolução de problemas ou procedimentos online."
+      - "Enviar estatísticas"
+      summary: "Enviar estatísticas sobre serviços de assistência e de resolução de problemas."
+      description: "Esta operação deve ser usada para enviar estatísticas recolhidas sobre serviços de assistência e de resolução de problemas."
       consumes:
       - "application/json"
       produces:
@@ -34,7 +35,7 @@ paths:
         in: "body"
         required: true
         schema:
-          $ref: '#/definitions/feedback1stLevelSchema'
+          $ref: '#/definitions/assistanceServiceSchema'
       responses:
         '200':
           description: "Operação realizada com sucesso"
@@ -65,7 +66,7 @@ definitions:
         type: "string"
         example: ""
 
-  feedback1stLevelSchema:
+  assistanceServiceSchema:
     type: "object"
     properties:
       isSDG:
@@ -96,29 +97,37 @@ definitions:
             nbEntries:
               type: "integer"
               example: 1000
-            feedbacks:
+            sources:
               type: "array"
               items:
                 type: "object"
                 properties:
-                  feedback:
+                  source:
                     type: "object"
                     properties:
-                      category:
+                      sourceUrl:
                         type: "string"
-                        example: "Procedure"
-                      rating:
-                        type: "integer"
-                        example: 1
-                      source:
-                        type: "string"
-                        example: "www.konsumenteuropa.se"
-                      foundInformation:
-                        type: "string"
-                        example: "Yes"
-                      helpUsImprove:
-                        type: "string"
-                        example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+                        example: "http://www1.ipq.pt/PT/IPQ/Pages/IPQ.aspx"
+                      statistics:
+                        type: "array"
+                        items:
+                          type: "object"
+                          properties:
+                            avgResponseTime:
+                              type: "integer"
+                              example: "223200000"
+                            categoryOfUser:
+                              type: "string"
+                              example: "business"
+                            nbRequests:
+                              type: "integer"
+                              example: 1
+                            situationOfUser:
+                              type: "string"
+                              example: "national"
+                            subjectMatter:
+                              type: "string"
+                              example: "Public contracts"
 
 
   ApiResponseError:
@@ -146,5 +155,5 @@ definitions:
         type: "string"
         example: ""
 externalDocs:
-  description: "Encontre mais sobre o serviços do SDG em "
-  url: 'https://amagovpt.github.io/servicos-digitais/'
+  description: "Encontre mais sobre o serviços da AMA em"
+  url: 'http://www.ama.gov.pt'
