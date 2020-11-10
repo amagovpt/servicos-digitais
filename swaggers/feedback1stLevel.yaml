@@ -16,7 +16,7 @@ paths:
   /feedback1stLevel:
     post:
       tags:
-      - "Enviar feedbacks"
+      - "Enviar feedback 1º Nível"
       summary: "Enviar feedbacks de primeiro nível sobre serviços de informação, de assistência, de resolução de problemas ou procedimentos online."
       description: "Esta operação deve ser usada para enviar feedbacks de primeiro nível sobre serviços de informação, de assistência, de resolução de problemas ou procedimentos online."
       consumes:
@@ -147,5 +147,5 @@ definitions:
         type: "string"
         example: ""
 externalDocs:
-  description: "Encontre mais sobre o serviços da AMA em"
-  url: 'http://www.ama.gov.pt'
+  description: "Encontre mais sobre o serviços do SDG em "
+  url: 'https://amagovpt.github.io/servicos-digitais/'
