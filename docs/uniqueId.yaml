@@ -1,6 +1,15 @@
 swagger: '2.0'
 info:
-  description: 'Este é um serviço disponibilizado pela AMA que fornece interoperabilidade com o Single Digital Gateway (SDG) da Comissão Europeia. Esta api deve ser chamada antes de invocar outras apis da SDG de maneira a obter o uniqueId que terá de ser fornecida nessas invocações. Adicionalmente, esta api tem uma operação que verifica a validade de um id existente.'
+  description: 'Esta API tem o objetivo de gerar um ID único para ser usado para chamar as outras APIS no envio de informação estatística ou de retorno de informação para um intervalo de referência.
+Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número único primeiro.
+
+
+ O ID único recebido na resposta vai ser utilizdo para chamar as outras API's e quando forem invocadas as restantes APIS devemos ter conta os seguintes pontos:
+ - Um intervalo de referência corresponde a um ID único
+ - A entidade competente deve manter um mapeamento entre o ID único e o intervalo de referência que foi utilizado
+ - Se alguma das APIS for invocada para reenviar os dados de um intervalo de referência  devemos usar um ID único e não voltar a chamar a API de identificador único.
+ - Se a entidade necessitar de alterar informamção já enviada para um intervalo de referência, deve usar o mesmo identificador único.
+ - A informação que for reenviada com o mesmo ID único vai ser sobreposta.'
   version: 1.0.0
   title: "SDG - uniqueId"
   termsOfService: 'https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/politica-de-privacidade'

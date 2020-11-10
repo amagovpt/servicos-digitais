@@ -14,7 +14,7 @@ Amtes de invocar as restantes APIS devemos invocar esta API para gerar o número
  - Um intervalo de referência corresponde a um ID único
  - A entidade competente deve manter um mapeamento entre o ID único e o intervalo de referência que foi utilizado
  - Se alguma das APIS for invocada para reenviar os dados de um intervalo de referência  devemos usar um ID único e não voltar a chamar a API de identificador único.
- - Se a entidade necessitar de alterar informamção já enviada para um intervalo de referência, deve usar o mesmo  Unique ID should be used again.
+ - Se a entidade necessitar de alterar informamção já enviada para um intervalo de referência, deve usar o mesmo identificador único.
  - A informação que for reenviada com o mesmo ID único vai ser sobreposta.
  
  Exemplo de resposta:
