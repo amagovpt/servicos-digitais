@@ -1,5 +1,7 @@
 {
           "feedback": {
+	   	 "serviceCode","",
+                "entityCode","",
 		"isSDG": true,
           	 "category": "Procedure",
            	 "source": "http://www.sist.si/contact-point/information",

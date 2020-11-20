@@ -1,6 +1,8 @@
 {
           "feedback": {
-	  "isSDG": true,            
+	    "serviceCode","",
+            "entityCode","",
+      	  "isSDG": true,            
 	   "category": "Procedure",
             "rating": 1,
             "source": "www.konsumenteuropa.se",

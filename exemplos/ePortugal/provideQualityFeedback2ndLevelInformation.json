@@ -1,6 +1,8 @@
 {
           "feedback": {
-			"isSDG": true,
+	    "serviceCode","",
+            "entityCode","",
+            "isSDG": true,
             "category": "Information",
             "source": "https://www.bbl.admin.ch/bbl/fr/home/themen/fachbereich-bauprodukte/produkteinformationsstelle.html",
             "survey": {

@@ -1,5 +1,7 @@
 {
   "feedback": {
+    "serviceCode","",
+    "entityCode","",
     "isSDG": true,
     "category": "Information",
     "rating": 2,
